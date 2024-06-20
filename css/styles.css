@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#gameContainer {
+    width: 400px; /* Adjusted width to compact the layout */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardRow {
+    display: flex;
+}
+
+.card {
+    width: 90px; /* Slightly reduced size */
+    height: 90px;
+    margin: 5px;
+    background-color: #ddd;
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #c61a09;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
